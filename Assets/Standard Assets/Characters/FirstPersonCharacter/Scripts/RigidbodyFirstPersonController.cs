@@ -8,6 +8,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
     [RequireComponent(typeof (CapsuleCollider))]
     public class RigidbodyFirstPersonController : MonoBehaviour
     {
+		
         [Serializable]
         public class MovementSettings
         {
@@ -155,7 +156,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     (movementSettings.CurrentTargetSpeed*movementSettings.CurrentTargetSpeed))
                 {
                     m_RigidBody.AddForce(desiredMove*SlopeMultiplier(), ForceMode.Impulse);
-                }
+				}
+				
             }
 
             if (m_IsGrounded)

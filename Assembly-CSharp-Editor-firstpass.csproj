@@ -53,6 +53,7 @@
      <Compile Include="Assets\Standard Assets\Editor\ImageEffects\CameraMotionBlurEditor.cs" />
      <Compile Include="Assets\Standard Assets\Editor\ImageEffects\ColorCorrectionCurvesEditor.cs" />
      <Compile Include="Assets\Standard Assets\Editor\ImageEffects\ColorCorrectionLookupEditor.cs" />
+     <Compile Include="Assets\Standard Assets\Editor\ImageEffects\CreaseShadingEditor.cs" />
      <Compile Include="Assets\Standard Assets\Editor\ImageEffects\DepthOfFieldDeprecatedEditor.cs" />
      <Compile Include="Assets\Standard Assets\Editor\ImageEffects\DepthOfFieldEditor.cs" />
      <Compile Include="Assets\Standard Assets\Editor\ImageEffects\EdgeDetectionEditor.cs" />
@@ -221,6 +222,12 @@
  <Reference Include="UnityEngine.VR">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
+ <Reference Include="Google.ProtocolBuffers">
+ <HintPath>/Users/Travis/Maize Maze/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
+ </Reference>
+ <Reference Include="websocket-sharp">
+ <HintPath>/Users/Travis/Maize Maze/Assets/Plugins/websocket-sharp.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
@@ -232,12 +239,6 @@
  </Reference>
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/macstandalonesupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="Google.ProtocolBuffers">
- <HintPath>/Users/Travis/Maize Maze/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
- </Reference>
- <Reference Include="websocket-sharp">
- <HintPath>/Users/Travis/Maize Maze/Assets/Plugins/websocket-sharp.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

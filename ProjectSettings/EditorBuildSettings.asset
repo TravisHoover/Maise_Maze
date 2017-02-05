@@ -5,5 +5,11 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/Space Maze.unity
+  - enabled: 0
+    path: Assets/Scenes/MazeMaize.unity
+  - enabled: 0
+    path: Assets/Scenes/MazeMaize.unity
   - enabled: 1
-    path: Assets/JeffMaze 1.unity
+    path: Assets/Scenes/Corn Maze.unity

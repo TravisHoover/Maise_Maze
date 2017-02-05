@@ -41,7 +41,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private float m_NextStep;
         private bool m_Jumping;
         private AudioSource m_AudioSource;
-		public Camera m_player;
 
         // Use this for initialization
         private void Start()
@@ -56,14 +55,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
-			CrossPlatformInputManager.SwitchActiveInputMethod (CrossPlatformInputManager.ActiveInputMethod.Hardware);
         }
 
 
         // Update is called once per frame
         private void Update()
         {
-
             RotateView();
             // the jump state needs to read here to make sure it is not missed
             if (!m_Jump)
@@ -84,7 +81,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
 
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
-
         }
 
 
@@ -98,8 +94,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void FixedUpdate()
         {
-
-			//m_MouseLook.LookRotation (transform, m_Camera.transform);
             float speed;
             GetInput(out speed);
             // always move along the camera forward as it is the direction that it being aimed at
@@ -212,7 +206,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             // Read input
             float horizontal = CrossPlatformInputManager.GetAxis("Horizontal");
             float vertical = CrossPlatformInputManager.GetAxis("Vertical");
-			RotateView();
+
             bool waswalking = m_IsWalking;
 
 #if !MOBILE_INPUT
@@ -241,11 +235,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
 
         private void RotateView()
-        {   
-            
-			this.transform.rotation = new Quaternion(m_Camera.transform.rotation.x*.00000000000001f,0, m_Camera.transform.rotation.z*.00000000000001f,0);
-            
-
+        {
+            m_MouseLook.LookRotation (transform, m_Camera.transform);
         }
 
 

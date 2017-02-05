@@ -46,11 +46,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\C# Scripts-Sina\GenObjectMovement.cs" />
+     <Compile Include="Assets\C# Scripts-Sina\GenObjectX.cs" />
      <Compile Include="Assets\C# Scripts\CameraController.cs" />
      <Compile Include="Assets\C# Scripts\GenObjectMovement.cs" />
      <Compile Include="Assets\C# Scripts\GenObjectX.cs" />
-     <Compile Include="Assets\GenObjectMovement.cs" />
-     <Compile Include="Assets\GenObjectX.cs" />
+     <Compile Include="Assets\ControllerFinishScript.cs" />
+     <Compile Include="Assets\Example\EchoTest.cs" />
+     <Compile Include="Assets\FinishScript.cs" />
      <Compile Include="Assets\GoogleVR\Demos\Scripts\DemoInputManager.cs" />
      <Compile Include="Assets\GoogleVR\Demos\Scripts\GVRDemo\Teleport.cs" />
      <Compile Include="Assets\GoogleVR\Demos\Scripts\PermissionsDemo\PermissionsFlowManager.cs" />
@@ -147,9 +150,6 @@
      <Compile Include="Assets\Networking\NetworkManger.cs" />
      <Compile Include="Assets\Networking\PlayerManager.cs" />
      <Compile Include="Assets\Networking\PositionUpdate.cs" />
-     <Compile Include="Assets\Networking\old_networking\NetworkManger.cs" />
-     <Compile Include="Assets\Networking\old_networking\PlayerManager.cs" />
-     <Compile Include="Assets\Networking\old_networking\PositionUpdate.cs" />
      <Compile Include="Assets\OVR\Moonlight\Scripts\OVRDebugHeadController.cs" />
      <Compile Include="Assets\OVR\Moonlight\Scripts\OVROverlay.cs" />
      <Compile Include="Assets\OVR\Moonlight\Scripts\OVRPlatformMenu.cs" />
@@ -178,6 +178,7 @@
      <Compile Include="Assets\OVR\Scripts\Util\OVRSceneSampleController.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRScreenFade.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRTrackerBounds.cs" />
+     <Compile Include="Assets\SimpleParticlePack\Scripts\ParticleTester.cs" />
      <Compile Include="Assets\TutorialAssets\Scripts\FreeflightCamera.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
